@@ -1,0 +1,104 @@
+.editor-document {
+    border: 1px solid var(--ck-color-base-border);
+    border-radius: var(--ck-border-radius);
+    max-height: 700px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.toolbar-container {
+    z-index: 1;
+    box-shadow: 0 0 5px hsla( 0,0%,0%,.2 );
+    border-bottom: 1px solid var(--ck-color-toolbar-border);
+}
+
+.toolbar-container .ck-toolbar {
+    border: 0;
+    border-radius: 0;
+}
+
+.editor-container {
+    padding: calc( 2 * var(--ck-spacing-large) );
+    background: var(--ck-color-base-foreground);
+    overflow-y: scroll;
+}
+
+.editor-container .ck-editor__editable {
+    width: 15.8cm;
+    min-height: 21cm;
+    padding: 1cm 2cm 2cm;
+    border: 1px hsl( 0,0%,82.7% ) solid;
+    border-radius: var(--ck-border-radius);
+    background: white;
+    box-shadow: 0 0 5px hsla( 0,0%,0%,.1 );
+    margin: 0 auto;
+}
+
+.editor-document .ck-content,
+.editor-document .ck-heading-dropdown .ck-list .ck-button__label {
+    font: 16px/1.6 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.editor-document .ck-heading-dropdown .ck-list .ck-button__label {
+    line-height: calc( 1.7 * var(--ck-line-height-base) * var(--ck-font-size-base) );
+    min-width: 6em;
+}
+
+.editor-document .ck-heading-dropdown .ck-list .ck-button:not(.ck-heading_paragraph) .ck-button__label {
+    transform: scale(0.8);
+    transform-origin: left;
+}
+
+.editor-document .ck-content h2,
+.editor-document .ck-heading-dropdown .ck-heading-heading1 .ck-button__label {
+    font-size: 2.18em;
+    font-weight: normal;
+}
+
+.editor-document .ck-content h2 {
+    line-height: 1.37em;
+    padding-top: .342em;
+    margin-bottom: .142em;
+}
+
+.editor-document .ck-content h3,
+.editor-document .ck-heading-dropdown .ck-heading-heading2 .ck-button__label {
+    font-size: 1.75em;
+    font-weight: normal;
+    color: hsl( 203, 100%, 50% );
+}
+
+.editor-document .ck-heading-dropdown .ck-heading-heading2.ck-on .ck-button__label {
+    color: var(--ck-color-list-button-on-text);
+}
+
+.editor-document .ck-content h3 {
+    line-height: 1.86em;
+    padding-top: .171em;
+    margin-bottom: .357em;
+}
+
+.editor-document .ck-content h4,
+.editor-document .ck-heading-dropdown .ck-heading-heading3 .ck-button__label {
+    font-size: 1.31em;
+    font-weight: bold;
+}
+
+.editor-document .ck-content h3 {
+    line-height: 1.24em;
+    padding-top: .286em;
+    margin-bottom: .952em;
+}
+
+.editor-document .ck-content p {
+    font-size: 1em;
+    line-height: 1.63em;
+    padding-top: .5em;
+    margin-bottom: 1.13em;
+}
+
+.editor-document .ck-content blockquote {
+    font-family: Georgia, serif;
+    margin-left: calc( 2 * var(--ck-spacing-large) );
+    margin-right: calc( 2 * var(--ck-spacing-large) );
+}
