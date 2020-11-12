@@ -1,4 +1,13 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
 .editor-document,
 .data-document {
     margin: 15px
+}
+
+pre {
+    margin: 10px;
+    background-color: antiquewhite;
 }
