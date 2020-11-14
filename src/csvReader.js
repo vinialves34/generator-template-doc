@@ -26,6 +26,7 @@ function submitFileCSV() {
             addMagicFields(fileCSV.result);
             renderDocument(ckEditor, fileCSV.result);
             document.querySelector("#output").textContent = fileCSV.result;
+            document.querySelector(".contentCSV").removeAttribute("style");
         }
 
         fileCSV.readAsText(document.querySelector("#document-csv").files[0]);

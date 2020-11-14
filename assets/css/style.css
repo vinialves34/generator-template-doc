@@ -9,5 +9,28 @@
 
 pre {
     margin: 10px;
+}
+
+.contentCSV {
+    margin-top: 50px;
+    border: 2px dashed black;
     background-color: antiquewhite;
+}
+
+.text-title-csv {
+    text-align: center;
+}
+
+#output {
+    margin: 15px;
+    text-align: justify;
+}
+
+.fileCSV {
+    margin-right: 10px;
+    margin-left: 15px;
+}
+
+.data-document {
+    width: 570px;
 }
